@@ -98,29 +98,3 @@ input:focus {
     text-align: center;
 }
 
-button {
-    width: 80%;
-    padding: 8px; /* Diminuído de 10px para 8px */
-    background: linear-gradient(135deg, rgba(0, 162, 255, 0.6), rgba(0, 255, 204, 0.6)); /* Ajustado para 0.6 para mais transparência */
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 255, 204, 0.5);
-    backdrop-filter: blur(5px);
-    margin: 25px auto 0px;
-    display: block;
-}
-
-button:hover {
-    background: linear-gradient(135deg, rgba(0, 162, 255, 0.8), rgba(0, 255, 204, 0.8)); /* Mantém opacidade maior ao passar o mouse */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 255, 204, 0.7);
-}
-
-button:active {
-    background: linear-gradient(135deg, rgba(0, 162, 255, 0.5), rgba(0, 255, 204, 0.5)); /* Ajustado para 0.5 ao clicar */
-    transform: scale(0.95);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
