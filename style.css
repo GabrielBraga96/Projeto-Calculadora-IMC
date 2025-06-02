@@ -4,40 +4,71 @@
     box-sizing: border-box;
 }
 
-section {
-    background-image: url(./img/background-calculadora-imc.gif);
-    position: fixed;
+body {
+    background-image: url(./img/background-IMC.png);
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: 100%;
 }
 
-main {
-    position:absolute;
-    z-index: 1;
+.gif-nuvem img {
+    width: 300px;
+    height: 200px;
+}
+
+.gif-nuvem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+
+.gif-mulher img{
+    width: 100px;
+    height: 300px;
+}
+
+.gif-mulher{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+header {
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 280px;
     background: linear-gradient(135deg, rgba(173, 216, 230, 0.3), rgba(255, 255, 255, 0.2));
     border: 2px solid rgba(200, 230, 255, 0.4);
     box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5), 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    backdrop-filter: blur(4px); /* <- efeito de vidro*/
-    /* posicionamento da caixa abaixo */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* <- posiciona de verdade! */
-    /* estilo de posicionamento para position:absolute */
+    backdrop-filter: blur(4px);
+    transform: translate(-50%, -50%); 
 }
 
-main::after{
-    content: "";
-    position:absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
+header::after{
+    /* width: 100%;
+    height: 100%; */
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.4) 0%, transparent 60%);
     border-radius: 12px;
     pointer-events: none;
@@ -48,13 +79,8 @@ input {
     flex-direction: column;
 }
 
-h1 {
-    position:absolute;
-    z-index: 1;
-    width: 100%;
-    height: 20%;
+.textos h1 {
     text-align: center;
-    padding-top: 50px;
     font-family: "Chango", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -62,6 +88,12 @@ h1 {
     color: #7fffd4;
     text-shadow: 0 0 8px rgba(127, 255, 212, 0.5);
     opacity: 0.8;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #titulo-calc {
