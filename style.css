@@ -53,12 +53,7 @@ body {
     height: 100vh;
 }
 
-
 header {
-    /* justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column; */
     text-align: center;
     width: 400px;
     height: 280px;
@@ -69,17 +64,6 @@ header {
     backdrop-filter: blur(4px);
     overflow: hidden; /* evita que filhos ultrapassem o header */
 }
-
-/* header > * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* input {
-    display: flex;
-    flex-direction: column;
-} */
 
 .textos h1 {
     text-align: center;
@@ -166,3 +150,16 @@ button:active {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none; */
+
+.feedback {
+    width: 600px;
+    height: 40px;
+}
+
+.feedback p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
