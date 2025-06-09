@@ -1,7 +1,7 @@
 const nome = document.querySelector('.nome');
 const altura = document.querySelector('.altura');
 const peso = document.querySelector('.peso');
-const botao = document.querySelector('.button');
+const botao = document.querySelector('button');
 const resultado = document.querySelector('.feedback p');
 
 botao.addEventListener('click', function () {
@@ -22,7 +22,7 @@ botao.addEventListener('click', function () {
     }else if (imc < 24.9) {
         classificacao = 'saudavel'
     }else if (imc < 29.9) {
-        classificação = 'com sobrepeso';
+        classificacao = 'com sobrepeso';
     }else if (imc < 34.9) {
         classificacao = 'com obesidade grau 1';
     }else if (imc <39.9) {
@@ -32,6 +32,7 @@ botao.addEventListener('click', function () {
     }
 
     resultado.innerHTML = `${nomeValor}, seu IMC é ${imc.toFixed(2)} e você está ${classificacao}.`;
+    document.querySelector('.feedback').style.display = 'block';
 
 }
 );
